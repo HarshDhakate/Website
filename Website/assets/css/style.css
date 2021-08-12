@@ -63,11 +63,11 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
   padding: 20px 0;
 }
-
+/* 
 #header.header-scrolled {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 12px 0;
-}
+} */
 
 #header .logo {
   font-size: 32px;
@@ -360,6 +360,14 @@ section {
   padding-right: 4px;
   color: #16df7e;
 }
+@media (max-width: 768px) {
+  .about .content h3 {
+    margin-top: 10px;
+  }
+  .about .content ul li {
+    padding-top: 10px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Counts
@@ -389,9 +397,11 @@ section {
 --------------------------------------------------------------*/
 
 .containerc{
+  background-position: center;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .containerc .box{
   position: relative;
